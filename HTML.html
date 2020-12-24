@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css.css">
+    <header id="header">Coding quiz challenge</header>
+</head>
+
+<body>
+    <div id="container">
+        <button class="btn" id="a1">
+        <div id = "highScores">Highscore
+           
+        </div>
+    </button>
+        <div style="display: none" id="initialsForm">
+            <div class="form-group">
+                <label for="initials">Initials</label>
+                <input type="text" class="form-control" id="initials" placeholder="Enter your initials">
+            </div>
+            <button type="submit" class="btn" id="submitInit">Submit</button>
+        </div>
+        
+        <p id="instructions">
+            Once you hit the start button the timer will start to answer questions once the timer
+            hits 0 or you finish the quiz you can enter your initals
+        </p>
+        <p id="scoreShowing"></p>
+        <button class="btn" id="clear" style="display: none">Clear highScores</button>
+        <button class="btn" id="retake" style="display: none">Retake</button>
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+            </div>
+            <div id="progress"></div>
+        </div><p>
+        <div id="scoreContainer" style="display: none"></div>
+    </p>
+    </div>
+    
+    <script src="java.js"></script>
+</body>
+
+</html>
